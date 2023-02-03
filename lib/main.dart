@@ -24,8 +24,7 @@ class FirstScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: AppBar(title: const
-        Text('CupertinoListTile')),
+        appBar: AppBar(title: const Text('CupertinoListTile')),
         body: Column(
           children: [
             for (int i = 0; i < 6; i++)
@@ -64,26 +63,19 @@ class FirstScreen extends StatelessWidget {
             CupertinoListSection(
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius:
-                BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(15),
               ),
-
-              margin: const
-              EdgeInsets.
-              symmetric(horizontal: 10,vertical: 10),
+              margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
               children: [
                 for (int i = 0; i < 7; i++)
                   Row(
-                    mainAxisAlignment:
-                    MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Container(
-                        padding:
-                        const EdgeInsets.all(25),
+                        padding: const EdgeInsets.all(25),
                         decoration: BoxDecoration(
                           color: Colors.red[200],
-                          borderRadius:
-                          BorderRadius.circular(200),
+                          borderRadius: BorderRadius.circular(200),
                         ),
                         child: const Icon(
                           Icons.person,
@@ -92,44 +84,16 @@ class FirstScreen extends StatelessWidget {
                       ),
                       Text(
                         'title $i',
-                        style: const
-                        TextStyle(fontSize: 18),
+                        style: const TextStyle(fontSize: 18),
                       ),
-                      const Icon(
-                          Icons.arrow_forward_ios),
-
-
-
+                      const Icon(Icons.arrow_forward_ios),
                     ],
                   ),
-
               ],
             ),
-
           ],
         ),
       ),
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
